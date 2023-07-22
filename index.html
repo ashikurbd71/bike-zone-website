@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biker Zone</title>
+
+      <!-- tailwind & daisyul links -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- fonts link -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">
+  
+
+<!--  custom style -->
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'bike-primary': '#E76F51',
+            'bike-primary-bg': 'rgba(231, 111, 81, 0.10)',
+        }
+        }
+      }
+    }
+  </script>
+
+
+<style>
+    .font-poppins{
+        font-family: 'Poppins', sans-serif;
+    }
+</style>
+
+</head>
+<body class="font-poppins">
+
+    <header class="lg:container mx-auto">
+
+         <nav class="">
+
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base">
+                      <li><a>Home</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>News</a></li>
+                      <li><a>Contact</a></li>
+                      
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost normal-case lg:text-3xl text-2xl font-bold ">Biker Zone</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-base">
+                    <li><a>Home</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>News</a></li>
+                      <li><a>Contact</a></li>
+              
+                  </ul>
+                </div>
+                <div class="">
+                  <a class="btn btn-primary bg-bike-primary border-none text-white">Button</a>
+                </div>
+              </div>
+
+         </nav>
+
+         <!-- slider -->
+
+
+         <div class="carousel w-full bg-bike-primary-bg lg:h-[500px] ">
+          <div id="item1" class="carousel-item w-full">
+        <div class="flex flex-col lg:flex-row lg:flex lg:p-24 p-4">
+
+          <div class="space-y-6 flex-1">
+
+             <h2 class="lg:text-5xl text-4xl font-poppins font-bold">Ride-on Yamaha <br> with Smile</h2>
+             <p>Amet minim mollit non deserunt ullamco 
+              est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+             <button class="btn btn-primary bg-bike-primary border-none  text-white">Purchase</button>
+
+
+          </div>
+
+          <div class="flex-1">
+
+            <img class="w[400px]" src="/images/slider/bike1.png" class="w-full" />
+          </div>
+
+        </div>
+          </div> 
+          <div id="item2" class="carousel-item w-full">
+            <div class="flex flex-col lg:flex-row lg:flex lg:p-24 p-4">
+
+              <div class="space-y-6 flex-1">
+    
+                 <h2 class="lg:text-5xl text-4xl font-poppins font-bold">Ride-on R15 V4 <br> with Smile</h2>
+                 <p>Amet minim mollit non deserunt ullamco 
+                  est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                 <button class="btn btn-primary bg-bike-primary border-none  text-white">Purchase</button>
+    
+    
+              </div>
+    
+              <div class="flex-1">
+    
+                <img class="w[400px]" src="/images/slider/bike2.png" class="w-full" />
+              </div>
+    
+            </div>
+          </div> 
+          <div id="item3" class="carousel-item w-full">
+            <div class="flex flex-col lg:flex-row lg:flex lg:p-24 p-4">
+
+              <div class="space-y-6 flex-1">
+    
+                 <h2 class="lg:text-5xl text-4xl font-poppins font-bold">Ride-on Suzuki Sf <br> with Smile</h2>
+                 <p>Amet minim mollit non deserunt ullamco 
+                  est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                 <button class="btn btn-primary bg-bike-primary border-none  text-white">Purchase</button>
+    
+    
+              </div>
+    
+              <div class="flex-1">
+    
+                <img class="w[400px]" src="/images/slider/bike3.png" class="w-full" />
+              </div>
+    
+            </div>
+          </div> 
+          <div id="item4" class="carousel-item w-full">
+            <div class="flex flex-col lg:flex-row lg:flex lg:p-24 p-4">
+
+              <div class="space-y-6 flex-1">
+    
+                 <h2 class="lg:text-5xl text-4xl font-poppins font-bold">Ride-on Yamaha<br> with Smile</h2>
+                 <p>Amet minim mollit non deserunt ullamco 
+                  est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                 <button class="btn btn-primary bg-bike-primary border-none  text-white">Purchase</button>
+    
+    
+              </div>
+    
+              <div class="flex-1">
+    
+                <img class="w[400px]" src="/images/slider/bike4.png" class="w-full" />
+              </div>
+    
+            </div>
+          </div>
+        </div> 
+        <div class="flex justify-center w-full py-2 gap-2">
+          <a href="#item1" class="btn btn-xs">1</a> 
+          <a href="#item2" class="btn btn-xs">2</a> 
+          <a href="#item3" class="btn btn-xs">3</a> 
+          <a href="#item4" class="btn btn-xs">4</a>
+        </div>
+    </header>
+
+
+
+    <main></main>
+
+
+    <footer></footer>
+
+
+</body>
+</html>
